@@ -139,27 +139,8 @@ Relevansi produk ditentukan berdasarkan kesamaan atribut Brand dan Gender dengan
 
 
 Berikut merupakan hasil evaluasi model:
-1. Logistic Regression
-   
-   ![image](https://github.com/user-attachments/assets/afc640ff-196f-4976-ba71-8c6b7a768dc0)
-2. Support Vector Machine
-   
-   ![image](https://github.com/user-attachments/assets/3b7cd9c0-aa78-4b39-8921-e36e05979441)
-3. K-Nearest Neighbor
-   
-   ![image](https://github.com/user-attachments/assets/69ac8f91-04e6-47d7-a11b-5555ce2a4906)
-4. Hasil interpretasi koefisien Logistic Regression:
-
-   ![image](https://github.com/user-attachments/assets/e76d15f0-45d0-491e-a7d5-80c47a07ec27)
+![image](https://github.com/user-attachments/assets/9bd77f20-223d-44b6-a5fd-2f5c6c807efd)
 
    
 Berdasarkan hasil evaluasi tersebut dapat ditarik kesimpulan:
-- Model KNN dengan k=9 merupakan model terbaik karena memiliki akurasi dan ROC AUC tertinggi, serta memilliki recall hampir sempurna.
-- Model SVM menunjukkan performa yang sangat kuat, namun sedikit lebih rendah dari KNN.
-- Model Logistic Regression masih memungkinkan untuk digunakan walaupun performanya lebih rendah dari kedua model lainnya, hal ini dapat disebabkan karena model kurang cocok dalam menangkap pola data non-linear.
-- Berdasarkan hasil interpretasi koefisien Logistic Regression sebagai berikut:
-    - Screen_Time → Semakin tinggi waktu layar, semakin besar kemungkinan hasil positif.
-    - Stress_Level → Semakin tinggi tingkat stres, semakin besar kemungkinan hasil positif.
-    - Sleep_Hours → Semakin lama tidur, semakin kecil kemungkinan hasil positif.
- 
-Berdasarkan keseluruhan tahapan proyek yang telah dilakukan, dapat disimpulkan bahwa  durasi screen time, kualitas tidur, dan tingkat stres adalah faktor gaya hidup paling signifikan yang mempengaruhi risiko overstimulasi digital. Hasil ini diharapkan dapat digunakan sebagai dasar langkah preventif, seperti membatasi screen time, meningkatkan kualitas tidur, serta menerapkan strategi manajemen stress untuk menjaga keseimbangan digital dan kesehatan mental.
+Cosine Similarity dan Euclidean Distance memberikan performa yang sama dalam merekomendasikan produk, dengan Precision@5 sekitar 64.6%—yang berarti 3-4 dari 5 rekomendasi berada dalam daftar produk relevan. nDCG@5 sebesar 68.04% menunjukkan bahwa posisi item relevan dalam daftar rekomendasi cukup baik, tetapi masih ada ruang untuk perbaikan dalam pengurutan hasil agar produk paling relevan muncul lebih awal.
