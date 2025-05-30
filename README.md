@@ -105,6 +105,12 @@ Terdapat dua pendekatan yang digunakan dalam modeling yaitu Cosine Similarity da
 Untuk menghasilkan rekomendasi, dibuat fungsi recommended() yang menerima nama produk, matriks kesamaan, dan jumlah hasil (top_n). Fungsi ini berjalan dengan mencari indeks produk input, mengambil skor kesamaan terhadap semua produk lain, mengurutkan skor dan mengambil top_n teratas (selain dirinya sendiri).
 Kemudian dilakukan implementasi untuk produk "Casual shirt". Hasil rekomendasi menunjukkan bahwa Cosine Similarity dan Euclidean Distance menghasilkan daftar produk yang identik, mencerminkan kemiripan deskripsi dalam dataset. Semua rekomendasi berasal dari merek Parx dan kategori Casual Shirt, menandakan sistem bekerja konsisten.
 
+![image](https://github.com/user-attachments/assets/d185e3a0-f096-4203-b2ff-c3c838f9ae4f)
+
+![image](https://github.com/user-attachments/assets/e6c52f53-495a-42b8-a215-ace3ec92dee8)
+
+![image](https://github.com/user-attachments/assets/c069c64c-ec4d-42a7-8483-3f776473ba89)
+
 ## Evaluation
 Evaluasi dilakukan menggunakan metrik Precision@K dan Normalized Discounted Cumulative Gain (nDCG@K) dengan nilai K = 5.
 1. Precision@K:
