@@ -77,6 +77,7 @@ Dilakukan beberapa teknik data preparation untuk memastikan data siap digunakan 
 - Peningkatan Bobot Kata Kunci Penting: Beberapa kata kunci penting yang menjadi ciri khas suatu brand atau deskripsi diperkuat dengan pengulangan (boosting) untuk membantu model lebih peka terhadap kemunculan kata-kata yang berpengaruh besar dalam identitas produk. Implementasi dilakukan dalam fungsi boost_keywords()
 - Pembentukan Fitur Gabungan (text_features): Beberapa kolom penting digabung menjadi satu fitur teks utama text_features. Langkah ini menciptakan representasi teks yang lebih kaya, mencakup semua aspek konten produk.
 - Aplikasi Preprocessing dan Keyword Boosting: dilakukan pembersihan dan boosting pada kolom text_features.
+- Membuat objek TF-IDF Vectorizer dengan stopwords bahasa Inggris kemudian mengubah teks fitur menjadi representasi numerik TF-IDF.
 ## Modeling
 Tahap modeling ini membangun sistem rekomendasi produk fashion berbasis konten (content-based filtering) dengan pendekatan pemrosesan teks. Sistem dirancang untuk menyarankan produk-produk yang mirip berdasarkan deskripsi, nama, brand, dan warna, menggunakan representasi teks dan pengukuran kemiripan antar produk.
 Terdapat dua pendekatan yang digunakan dalam modeling yaitu Cosine Similarity dan Euclidean Distance. 
